@@ -24,6 +24,7 @@
     pnpm
     jq
     jetbrains-mono
+    ghq
   ];
 
   xdg.configFile = {
@@ -35,8 +36,8 @@
   };
 
   home.sessionVariables = {
-    CODE_DIR = "${home.homeDirectory}/Developer";
-    NIX_CONFIG_DIR = "$CODE_DIR/nix-dev";
+    REPOSITORIES_DIR = "${home.homeDirectory}/.ghq";
+    NIX_CONFIG_DIR = "${home.homeDirectory}/.nix-dev";
   };
 
   home.shellAliases = {
@@ -83,6 +84,9 @@
         init.defaultBranch = "main";
         rerere.enabled = "true";
         push.default = "current";
+        ghq = {
+          root = home.sessionVariables.REPOSITORIES_DIR;
+        };
       };
       includes = [
         {
@@ -95,16 +99,10 @@
           };
         }
       ];
-      delta = {
-        enable = true;
-        package = pkgs.delta;
-      };
     };
     lazygit = {
       enable = true;
       settings = {
-        git.paging.pager = "${pkgs.delta}/bin/delta --paging=never";
-
         update.method = "never";
         disableStartupPopups = true;
       };
@@ -114,6 +112,27 @@
       enableCompletion = true;
       autosuggestion.enable = true;
       syntaxHighlighting.enable = true;
+      initExtra = ''
+        md() {
+          mkdir -p $1
+          cd $1
+        }
+
+        r() {
+          dir_path=$(ghq list -p | fzf)
+
+          if [[ -n "$dir_path" ]]; then
+            cd "$dir_path"
+          fi
+        }
+
+        nuke() {
+          git clean -d -X -f
+          pnpm install
+          pnpm nx run-many -t build
+          pnpm install
+        }
+      '';
     };
     starship = {
       enable = true;
