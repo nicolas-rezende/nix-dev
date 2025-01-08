@@ -1,0 +1,19 @@
+# font
+font-size = 12
+font-family = JetBrains Mono
+
+# theme
+theme = ayu
+background-opacity = 0.95
+background-blur-radius = 20
+window-decoration = false
+cursor-style = block
+cursor-style-blink = false
+
+# disable ligatures
+font-feature = -liga
+font-feature = -calt
+font-feature = -dlig
+
+# qol
+mouse-hide-while-typing = true
