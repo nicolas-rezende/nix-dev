@@ -112,7 +112,13 @@
       enableCompletion = true;
       autosuggestion.enable = true;
       syntaxHighlighting.enable = true;
+      oh-my-zsh = {
+        enable = true;
+        theme = "robbyrussell";
+      };
       initExtra = ''
+        unalias md
+
         md() {
           mkdir -p $1
           cd $1
@@ -133,11 +139,6 @@
           pnpm install
         }
       '';
-    };
-    starship = {
-      enable = true;
-      enableZshIntegration = true;
-      enableBashIntegration = true;
     };
   };
 }
