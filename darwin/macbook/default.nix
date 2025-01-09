@@ -18,7 +18,6 @@ in {
       "betterdisplay"
       "logi-options+"
       "shottr"
-      "cursor"
     ];
     masApps = {
       Xcode = 497799835;
@@ -126,7 +125,7 @@ in {
       {path = "/Applications/Launchpad.app";}
       {path = "/Applications/Google Chrome.app";}
       {path = "/Applications/Ghostty.app";}
-      {path = "/Applications/Cursor.app";}
+      {path = "/Applications/Visual Studio Code.app";}
       {path = "/Applications/Discord.app";}
       {
         path = "/Users/nicolas/Downloads";
