@@ -26,6 +26,8 @@
     jetbrains-mono
     cascadia-code
     ghq
+    devbox
+    bun
   ];
 
   fonts.fontconfig.enable = true;
