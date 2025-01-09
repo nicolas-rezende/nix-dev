@@ -19,6 +19,7 @@ in {
       "logi-options+"
       "shottr"
       "openvpn-connect"
+      "docker"
     ];
     masApps = {
       Xcode = 497799835;
