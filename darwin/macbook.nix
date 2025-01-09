@@ -2,7 +2,7 @@
   hostname = "macbook";
 in {
   imports = [
-    ../dock.nix
+    ./lib/dock.nix
   ];
 
   homebrew = {

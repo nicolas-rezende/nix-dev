@@ -22,7 +22,7 @@
     darwinConfigurations = {
       "macbook" = darwin.lib.darwinSystem {
         system = "aarch64-darwin";
-        modules = [./darwin/macbook];
+        modules = [./darwin/macbook.nix];
       };
     };
 
