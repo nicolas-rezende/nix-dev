@@ -18,6 +18,7 @@ in {
       "betterdisplay"
       "logi-options+"
       "shottr"
+      "openvpn-connect"
     ];
     masApps = {
       Xcode = 497799835;

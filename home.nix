@@ -26,7 +26,6 @@
     jetbrains-mono
     cascadia-code
     ghq
-    openvpn
   ];
 
   fonts.fontconfig.enable = true;
