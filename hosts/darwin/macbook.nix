@@ -121,6 +121,7 @@ in {
     };
   };
 
+  # Allows to declarative manage the dock. See ./lib/dock.nix for more information.
   local = {
     dock.enable = true;
     dock.entries = [

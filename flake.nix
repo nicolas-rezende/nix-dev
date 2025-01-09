@@ -22,13 +22,25 @@
     darwinConfigurations = {
       "macbook" = darwin.lib.darwinSystem {
         system = "aarch64-darwin";
-        modules = [./darwin/macbook.nix];
+        modules = [./hosts/darwin/macbook.nix];
+      };
+    };
+
+    nixosConfigurations = {
+      "vmware" = nixpkgs.lib.nixosSystem {
+        system = "aarch64-linux";
+        modules = [./hosts/nixos/vmware.nix];
       };
     };
 
     homeConfigurations = {
       "nicolas@macbook" = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages."aarch64-darwin";
+        modules = [./home.nix];
+      };
+
+      "nicolas@vmware" = home-manager.lib.homeManagerConfiguration {
+        pkgs = nixpkgs.legacyPackages."aarch64-linux";
         modules = [./home.nix];
       };
     };
