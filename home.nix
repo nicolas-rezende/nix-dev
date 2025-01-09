@@ -24,9 +24,12 @@
     pnpm
     jq
     jetbrains-mono
+    cascadia-code
     ghq
     openvpn
   ];
+
+  fonts.fontconfig.enable = true;
 
   xdg.configFile = {
     "ghostty/config".source = ./dotfiles/ghostty/config;
