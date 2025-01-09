@@ -7,19 +7,28 @@
       url = "github:nix-community/home-manager/release-24.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    darwin = {
+      url = "github:LnL7/nix-darwin";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {
     nixpkgs,
+    darwin,
     home-manager,
     ...
-  }: let
-    system = "aarch64-darwin";
-    pkgs = nixpkgs.legacyPackages.${system};
-  in {
+  }: {
+    darwinConfigurations = {
+      "macbook" = darwin.lib.darwinSystem {
+        system = "aarch64-darwin";
+        modules = [./darwin/macbook];
+      };
+    };
+
     homeConfigurations = {
-      nicolas = home-manager.lib.homeManagerConfiguration {
-        inherit pkgs;
+      "nicolas@macbook" = home-manager.lib.homeManagerConfiguration {
+        pkgs = nixpkgs.legacyPackages."aarch64-darwin";
         modules = [./home.nix];
       };
     };

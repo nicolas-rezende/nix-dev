@@ -25,6 +25,7 @@
     jq
     jetbrains-mono
     ghq
+    openvpn
   ];
 
   xdg.configFile = {
@@ -54,6 +55,7 @@
     c = "clear";
     d = "cd $NIX_CONFIG_DIR";
     hm = "home-manager switch --flake $NIX_CONFIG_DIR";
+    drb = "darwin-rebuild switch --flake $NIX_CONFIG_DIR";
   };
 
   programs = {
