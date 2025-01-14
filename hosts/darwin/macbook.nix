@@ -20,6 +20,7 @@ in {
       "shottr"
       "openvpn-connect"
       "docker"
+      "jellyfin-media-player"
     ];
     masApps = {
       Xcode = 497799835;
