@@ -96,7 +96,7 @@ in {
     trackpad = {
       Clicking = true; # tap to click
       TrackpadRightClick = true;
-      TrackpadThreeFingerDrag = true;
+      TrackpadThreeFingerDrag = false;
     };
 
     dock = {
