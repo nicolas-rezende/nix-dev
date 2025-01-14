@@ -23,11 +23,11 @@
     nodejs
     pnpm
     jq
-    jetbrains-mono
-    cascadia-code
     ghq
     devbox
     bun
+    # fonts
+    jetbrains-mono
   ];
 
   fonts.fontconfig.enable = true;
