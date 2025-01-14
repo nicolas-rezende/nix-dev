@@ -58,6 +58,7 @@
     cp = "cp -r";
     c = "clear";
     d = "cd $NIX_CONFIG_DIR";
+    y = "yy";
     hm = "home-manager switch --flake $NIX_CONFIG_DIR";
     drb = "darwin-rebuild switch --flake $NIX_CONFIG_DIR";
   };
@@ -111,6 +112,17 @@
       settings = {
         update.method = "never";
         disableStartupPopups = true;
+      };
+    };
+    yazi = {
+      enable = true;
+      enableZshIntegration = true;
+    };
+    helix = {
+      enable = true;
+      defaultEditor = true;
+      settings = {
+        theme = "base16_transparent";
       };
     };
     zsh = {
