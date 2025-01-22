@@ -1,5 +1,5 @@
-font-size = 13
-font-family = JetBrains Mono
+font-size = 16
+font-family = Geist Mono
 
 theme = catppuccin-mocha
 # background-opacity = 0.95
@@ -8,6 +8,8 @@ theme = catppuccin-mocha
 font-feature = -liga
 font-feature = -calt
 font-feature = -dlig
+
+macos-option-as-alt = left
 
 mouse-hide-while-typing = true
 shell-integration-features = true

@@ -1,8 +1,4 @@
-{
-  config,
-  pkgs,
-  ...
-}: rec {
+{pkgs, ...}: rec {
   home.username = "nicolas";
   home.homeDirectory = "/Users/nicolas";
 
@@ -26,8 +22,10 @@
     ghq
     devbox
     bun
-    # fonts
+    jujutsu
+    zellij
     jetbrains-mono
+    geist-font
   ];
 
   fonts.fontconfig.enable = true;

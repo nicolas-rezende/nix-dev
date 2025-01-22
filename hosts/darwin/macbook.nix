@@ -11,6 +11,7 @@ in {
       "firefox"
       "google-chrome"
       "visual-studio-code"
+      "zed"
       "discord"
       "raycast"
       "ghostty"
@@ -21,6 +22,7 @@ in {
       "openvpn-connect"
       "docker"
       "jellyfin-media-player"
+      "fork"
     ];
     masApps = {
       Xcode = 497799835;
