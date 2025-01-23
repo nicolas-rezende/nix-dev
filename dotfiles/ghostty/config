@@ -1,14 +1,17 @@
 font-size = 16
 font-family = Geist Mono
 
-theme = catppuccin-mocha
-# background-opacity = 0.95
-# background-blur-radius = 20
+theme = Dark Pastel
+window-decoration = false
+background-opacity = 0.95
+background-blur-radius = 20
 
 font-feature = -liga
 font-feature = -calt
 font-feature = -dlig
 
+window-padding-x = 8
+window-padding-y = 8
 macos-option-as-alt = left
 
 mouse-hide-while-typing = true

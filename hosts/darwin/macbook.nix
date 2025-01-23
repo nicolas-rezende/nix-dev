@@ -23,6 +23,7 @@ in {
       "docker"
       "jellyfin-media-player"
       "fork"
+      "zen-browser"
     ];
     masApps = {
       Xcode = 497799835;
@@ -129,14 +130,14 @@ in {
     dock.enable = true;
     dock.entries = [
       {path = "/Applications/Launchpad.app";}
-      {path = "/Applications/Google Chrome.app";}
+      {path = "/Applications/Zen Browser.app";}
       {path = "/Applications/Ghostty.app";}
       {path = "/Applications/Visual Studio Code.app";}
       {path = "/Applications/Discord.app";}
       {
         path = "/Users/nicolas/Downloads";
         section = "others";
-        options = "--sort name --view grid --display folder";
+        options = "--sort datemodified --view fan --display stack";
       }
     ];
   };
