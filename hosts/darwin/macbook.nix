@@ -7,6 +7,7 @@ in {
 
   homebrew = {
     enable = true;
+    brews = ["cocoapods"];
     casks = [
       "firefox"
       "google-chrome"
@@ -21,7 +22,6 @@ in {
       "shottr"
       "openvpn-connect"
       "docker"
-      "jellyfin-media-player"
       "fork"
       "zen-browser"
     ];

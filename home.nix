@@ -20,10 +20,8 @@
     pnpm
     jq
     ghq
-    devbox
-    bun
-    jujutsu
     zellij
+    bun
     jetbrains-mono
     geist-font
   ];
