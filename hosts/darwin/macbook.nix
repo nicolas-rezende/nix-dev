@@ -11,22 +11,23 @@ in {
     casks = [
       "firefox"
       "google-chrome"
+      "zen-browser"
       "visual-studio-code"
-      "zed"
-      "discord"
+      "betterdisplay"
       "raycast"
+      "discord"
+      "zed"
       "ghostty"
       "1password"
-      "betterdisplay"
       "logi-options+"
       "shottr"
       "openvpn-connect"
       "docker"
       "fork"
-      "zen-browser"
     ];
     masApps = {
       Xcode = 497799835;
+      Infuse = 1136220934;
     };
     onActivation = {
       autoUpdate = true;
