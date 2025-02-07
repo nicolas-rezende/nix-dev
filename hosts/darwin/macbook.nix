@@ -21,6 +21,7 @@ in {
       "docker"
       "fork"
       "android-studio"
+      "vmware-fusion"
     ];
     masApps = {
       Xcode = 497799835;
