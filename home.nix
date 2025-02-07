@@ -20,10 +20,8 @@
     pnpm
     jq
     ghq
-    zellij
     bun
     jetbrains-mono
-    geist-font
   ];
 
   fonts.fontconfig.enable = true;

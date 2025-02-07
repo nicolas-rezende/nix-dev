@@ -1,5 +1,5 @@
-font-size = 18
-font-family = Geist Mono
+font-size = 16
+font-family = JetBrains Mono
 
 theme = catppuccin-mocha
 window-decoration = false

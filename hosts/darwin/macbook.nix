@@ -11,19 +11,16 @@ in {
     casks = [
       "firefox"
       "google-chrome"
-      "zen-browser"
       "visual-studio-code"
       "betterdisplay"
       "raycast"
       "discord"
-      "zed"
       "ghostty"
       "1password"
-      "logi-options+"
-      "shottr"
       "openvpn-connect"
       "docker"
       "fork"
+      "android-studio"
     ];
     masApps = {
       Xcode = 497799835;
@@ -130,8 +127,7 @@ in {
   local = {
     dock.enable = true;
     dock.entries = [
-      {path = "/Applications/Launchpad.app";}
-      {path = "/Applications/Zen Browser.app";}
+      {path = "/Applications/Google Chrome.app";}
       {path = "/Applications/Ghostty.app";}
       {path = "/Applications/Visual Studio Code.app";}
       {path = "/Applications/Discord.app";}
